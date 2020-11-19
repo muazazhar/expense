@@ -12,7 +12,7 @@ export const transContext = createContext(initState);
 
 //create global provider
 export const GlobalProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, initState);
+  const [state] = useReducer(AppReducer, initState);
   return (
     <transContext.Provider value={{ transaction: state }}>
       {children}
