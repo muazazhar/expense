@@ -10,8 +10,8 @@ export const TransactionHistory = () => {
         Transaction History
       </h3>
       <ul className="list">
-        {transactions.map((transactions, ind) => (
-          <Transaction transactions={transactions} />
+        {transactions.map((transaction) => (
+          <Transaction transaction={transaction} />
         ))}
       </ul>
     </div>
