@@ -48,13 +48,19 @@
   color: white;
   transition: 0.3s;
 }
+.plus:hover > button {
+  display: inherit;
+}
+.minus:hover > button {
+  display: inherit;
+}
 .minus:hover {
   background-color: red;
   color: white;
   transition: 0.3s;
 }
 .del-btn {
-  /* display: none; */
+  display: none;
   background-color: white;
   border: none;
 }

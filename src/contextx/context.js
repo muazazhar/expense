@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from "react";
-import { TransactionHistory } from "../components/TransactionHistory";
+// import { TransactionHistory } from "../components/TransactionHistory";
 import AppReducer from "./reducer";
 
 const initState = [
@@ -14,7 +14,7 @@ export const transContext = createContext(initState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initState);
   return (
-    <transContext.Provider value={{ transaction: state.initState }}>
+    <transContext.Provider value={{ transaction: state }}>
       {children}
     </transContext.Provider>
   );
