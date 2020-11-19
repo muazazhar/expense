@@ -1,4 +1,4 @@
-export default (state, action) => {
+export default al = (state, action) => {
   switch (action.type) {
     default:
       return state;
