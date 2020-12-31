@@ -3,10 +3,9 @@ import { GlobalContext } from "../context/globalContext";
 
 export const AddTransaction = () => {
   const [text, setText] = useState("");
-  const [amount, setAmount] = useState();
+  const [amount, setAmount] = useState(0);
 
   const { addTransaction } = useContext(GlobalContext);
-  let idGen = 1;
   const onSubmit = (e) => {
     e.preventDefault();
     const newTransaction = {

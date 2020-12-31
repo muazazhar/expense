@@ -1,5 +1,4 @@
 export default (state, action) => {
-  let alo = console.log("asd");
   switch (action.type) {
     case "DELETE_TRANSACTION":
       return {
